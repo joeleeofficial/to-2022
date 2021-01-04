@@ -12,7 +12,7 @@ var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
  var data = "🎉 "+ days + "d " + hours + "h " + minutes + "m " + seconds + "s "  + " 🎉";
-
+console.log(data)
     
 }, 1000);</script>
             <h1 class="countdown" id="countdown" style=" text-align: center; font-size: 20pt;min-height: 10em;display: table-cell; font-family: 'Montserrat', sans-serif; text-align: center; vertical-align: middle;">${data}</h1>
