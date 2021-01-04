@@ -21,7 +21,6 @@ font-family: 'Montserrat', sans-serif; text-align: center; background-color: whi
 }
 </style>
   <text id="countdown" x="0" y="15" fill="black" style="text-align:center"></text>
-</div>
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 1, 2022").getTime();
