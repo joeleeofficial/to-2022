@@ -1,45 +1,52 @@
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
 <style>
 body {
-  font-family: -apple-system;
-  height: 100%;
+font-family: 'Montserrat', sans-serif; text-align: center; background-color: white; 
 }
 #container {
   display: table;
+  background-color:white;
   width: 100%;
   height: 100%;
+  font-size: 160px;
 }
 #countdown {
   text-align: center;
   font-size: 20pt;
   min-height: 10em;
+  background-color:white;
   display: table-cell;
   vertical-align: middle;
 }
 </style>
-<div id="container">
-  <div id="countdown"></div>
+</head>
+<body>
+<div id="container" style="position:fixed; ">
+<div id="countdown" style="text-align:center"></div>
 </div>
 <script>
-// Date we want to countdown to
-let targetDate = new Date()
-targetDate.setHours(8760, 0, 0, 0)
-let targetTime = targetDate.getTime()
-// Create a timer that updates every second
-let timer = setInterval(function() {
-  var now = new Date().getTime()
-  let distance = targetTime - now;
-  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-  let seconds = Math.floor((distance % (1000 * 60)) / 1000)
-  // Update the element with id="countdown"
-  let e = document.getElementById("countdown")
-  e.innerHTML = "🌝 "
-    + hours + "h "
-    + minutes + "m " + seconds + "s "
-    + " to midnight"
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 1, 2022").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  document.getElementById("countdown").innerHTML = "🎉 "+ days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s "  + " 🎉";
+    document.title = "🎉 "+ days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s "  + " 🎉";
+
+    
   if (distance < 0) {
-    clearInterval(timer)
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "00d 00h 00m 00s";
   }
-}, 1000)
+}, 1000);
 </script>
