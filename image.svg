@@ -18,7 +18,9 @@ font-family: 'Montserrat', sans-serif; text-align: center; background-color: whi
   vertical-align: middle;
 }
 </style>
-<div id="countdown" style="text-align:center"></div>
+<svg width="100" height="100">
+
+  <div id="countdown" style="text-align:center"></div></svg>
 </div>
 <script>
 // Set the date we're counting down to
