@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <title>Counting Down</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
@@ -45,6 +46,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   document.getElementById("countdown").innerHTML = "🎉 "+ days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s "  + " 🎉";
+    document.title = "🎉 "+ days + "d " + hours + "h "
   + minutes + "m " + seconds + "s "  + " 🎉";
     
   if (distance < 0) {
