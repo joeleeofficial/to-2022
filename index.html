@@ -57,7 +57,9 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s "  + " 🎉";
 document.getElementById("meta").innerHTML = "🎉 "+ days + "d " + hours + "h "
   + minutes + "m " + seconds + "s "  + " 🎉";
- 
+  <meta name="author" content=`"🎉 "+ ${days} + "d " + ${hours} + "h "
+  + ${minutes} + "m " + ${seconds} + "s "  + " 🎉"`>
+
     
   if (distance < 0) {
     clearInterval(x);
