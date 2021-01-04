@@ -17,7 +17,7 @@ console.log(data)
 
     
 }, 1000);</script>
-            <h1 class="countdown" id="countdown" style=" text-align: center; font-size: 20pt;min-height: 10em;display: table-cell; font-family: 'Montserrat', sans-serif; text-align: center; vertical-align: middle;">${data}</h1>
+            <h1 class="countdown" id="countdown" style=" text-align: center; font-size: 20pt;min-height: 10em;display: table-cell; font-family: 'Montserrat', sans-serif; text-align: center; vertical-align: middle;">hi</h1>
     </div>
 </foreignObject>
 
