@@ -18,8 +18,6 @@ font-family: 'Montserrat', sans-serif; text-align: center; background-color: whi
   vertical-align: middle;
 }
 </style>
-</head>
-<body>
 <div id="container" style="position:fixed; ">
 <div id="countdown" style="text-align:center"></div>
 </div>
