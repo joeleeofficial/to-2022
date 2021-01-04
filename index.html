@@ -22,8 +22,7 @@ body {
 </div>
 <script>
 // Date we want to countdown to
-let targetDate = new Date()
-targetDate.setHours(8760, 0, 0, 0)
+let targetDate = Date("Jan 1, 2022 15:37:25").getTime();
 let targetTime = targetDate.getTime()
 // Create a timer that updates every second
 let timer = setInterval(function() {
